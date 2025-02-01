@@ -1,0 +1,7 @@
+Configuration Details:
+Total Tickets: 10
+Maximum Ticket Capacity: 1
+Total Customers: 11
+Ticket Release Rate (sec): 1
+Customer Retrieval Rate (sec): 1
+Number of Vendors: 2

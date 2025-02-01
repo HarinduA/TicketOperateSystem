@@ -1,0 +1,218 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 480px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.app-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d1d8e0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background: #f8f9fa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.start-button {
+  background-color: #28a745; /* Success green */
+}
+
+.start-button:hover {
+  background-color: #218838;
+}
+
+.stop-button {
+  background-color: #e74c3c; /* Error red */
+}
+
+.stop-button:hover {
+  background-color: #c0392b;
+}
+
+.reset-button {
+  background-color: #3498db; /* Primary blue */
+}
+
+.reset-button:hover {
+  background-color: #2980b9;
+}
+
+.status-button {
+  background-color: #16a085; /* Teal */
+}
+
+.status-button:hover {
+  background-color: #13856d;
+}
+
+.status-display {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.status-display h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.status-display p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3498db;
+}
+
+.log-display {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.log-display h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.log-entry {
+  display: flex;
+  justify-content: space-between; 
+  background-color: #ffffff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.log-message {
+  font-size: 16px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.log-time {
+  font-size: 12px;
+  color: #888888;
+  margin-left: 10px;
+  text-align: right;
+  align-self: center;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+}
